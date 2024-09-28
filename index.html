@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="signup-container">
+          <form>
+            <div class="heading-container">
+              <p class="heading">Create an account</p>
+            </div>
+            <div class="signup-fields-container">
+              <input
+                type="text"
+                name="fName"
+                class="fName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="lName"
+                class="lName"
+                placeholder="Last Name"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="terms-container">
+              <input
+                type="checkbox"
+                name="conditions"
+                class="terms-check"
+                required
+              />
+              <p class="terms-text">
+                I agree to the <a href="">Terms & Conditions</a>
+              </p>
+            </div>
+            <br />
+            <input type="submit" value="Create accout" class="signup-btn" />
+            <br />
+            <br />
+            <div class="register-container">
+              <hr />
+              <p>or register with</p>
+              <hr />
+            </div>
+            <br />
+            <div class="signup-options-container">
+              <div class="google">
+                <img src="./images/google.png" alt="google" />
+                <p>Google</p>
+              </div>
+              <div class="apple">
+                <i class="fa-brands fa-apple"></i>
+                <p>Apple</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="login-container">
+
+          <form>
+          <div class="heading-container">
+            <p class="heading">Login</p>
+          </div>
+          <div class="login-fields-container">
+            <input
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Email"
+              required
+            />
+
+            <input
+              type="password"
+              name="password"
+              class="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <input type="submit" value="Login" class="signup-btn" />
+          <br />
+          <br />
+          <div class="register-container">
+            <hr />
+            <p>or login with</p>
+            <hr />
+          </div>
+          <br />
+          <div class="signup-options-container">
+            <div class="google">
+              <img src="./images/google.png" alt="google" />
+              <p>Google</p>
+            </div>
+            <div class="apple">
+              <i class="fa-brands fa-apple"></i>
+              <p>Apple</p>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="inner-blurbox">
+          <p class="slider-text">Do not have an account?</p><br>
+          <button class="switch-btn">Create one!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
