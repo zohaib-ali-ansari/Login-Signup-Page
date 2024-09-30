@@ -39,9 +39,17 @@ switchBtn.addEventListener("click", () => {
 });
 
 let direction = () => {
-  if (window.innerWidth <= 750) {
+  if (
+    window.innerWidth <= 750 &&
+    (mainContainer.style.flexDirection === "row" ||
+      mainContainer.style.flexDirection === "row-reverse")
+  ) {
     window.location.reload();
-  } else if (window.innerWidth > 750) {
+  } else if (
+    window.innerWidth > 750 &&
+    (mainContainer.style.flexDirection === "column" ||
+      mainContainer.style.flexDirection === "column-reverse")
+  ) {
     window.location.reload();
   }
 };
